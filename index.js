@@ -14,8 +14,9 @@ app.get("/green",(req,res)=>{
 app.get("/blue",(req,res)=>{
     res.send('hello world blue')
 })
-
-
+app.get("/red",(req,res)=>{
+    res.send('hello world red')
+})
 app.listen(port,()=>{
     console.log('i am a backend developer');
 });
