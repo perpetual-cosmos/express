@@ -20,6 +20,10 @@ app.get("/red",(req,res)=>{
 app.get("/violet",(req,res)=>{
     res.send('hello world violet')
 })
+app.post("/",(req,res)=>{
+    a=req;
+    console.log(a)
+})
 app.listen(port,()=>{
     console.log('i am a backend developer');
 });
