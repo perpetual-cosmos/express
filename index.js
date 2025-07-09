@@ -20,7 +20,9 @@ app.get("/red", (req, res) => {
 app.get("/violet", (req, res) => {
   res.send("hello world violet");
 });
-
+app.get("/cyan", (req, res) => {
+  res.send("hello world cyan");
+});
 app.get("/rainbow", (req, res) => {
   res.send("hello world rainbow");
 });
