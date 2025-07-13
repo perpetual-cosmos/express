@@ -1,29 +1,20 @@
-const express = require("express");
-const port=3000;
-const app=express();
 
-app.get("/",(req,res)=>{
-    res.send('hello world')
-})
-app.get("/green",(req,res)=>{
-    res.send('hello world green')
-})
-app.get("/green",(req,res)=>{
-    res.send('hello world black')
-})
-app.get("/blue",(req,res)=>{
-    res.send('hello world blue')
-})
-app.get("/red",(req,res)=>{
-    res.send('hello world red')
-})
-app.get("/violet",(req,res)=>{
-    res.send('hello world violet')
-})
-app.post("/",(req,res)=>{
-    a=req;
-    console.log(a)
-})
-app.listen(port,()=>{
-    console.log('i am a backend developer');
+// 1. Import the express module
+const express = require('express');
+
+// 2. Create an Express application
+const app = express();
+
+// 3. Middleware: Parse incoming JSON requests
+app.use(express.json());
+// Now you can access req.body in POST requests
+
+// 4. Define a port for your server
+const PORT = 3000;
+
+
+// 5. Start the server
+app.listen(PORT, () => {
+  console.log(`Express server running at http://localhost:${PORT}`);
 });
+
