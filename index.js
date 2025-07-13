@@ -1,4 +1,3 @@
-
 // 1. Import the express module
 const express = require('express');
 
@@ -12,8 +11,15 @@ app.use(express.json());
 // 4. Define a port for your server
 const PORT = 3000;
 
+// 5. Basic GET route
+// Visit http://localhost:3000/ in your browser
+app.get('/', (req, res) => {
+  res.send('Welcome to Express!');
+});
 
-// 5. Start the server
+
+
+// 6. Start the server
 app.listen(PORT, () => {
   console.log(`Express server running at http://localhost:${PORT}`);
 });
