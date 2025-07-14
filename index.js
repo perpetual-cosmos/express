@@ -17,9 +17,29 @@ app.get('/', (req, res) => {
   res.send('Welcome to Express!');
 });
 
+// 6. GET route with a parameter
+// Try visiting http://localhost:3000/hello/YourName
+app.get('/hello/:name', (req, res) => {
+  const userName = req.params.name;
+  res.send(`Hello, ${userName}!`);
+});
+
+// 7. GET route with a query string
+// Try http://localhost:3000/search?term=express
+app.get('/search', (req, res) => {
+  const term = req.query.term;
+  res.send(`You searched for: ${term}`);
+});
+
+// 8. POST route to receive data
+// Use Postman or curl to POST JSON to http://localhost:3000/data
+app.post('/data', (req, res) => {
+  // req.body contains the parsed JSON data
+  res.json({ message: 'Data received!', yourData: req.body });
+});
 
 
-// 6. Start the server
+// 9. Start the server
 app.listen(PORT, () => {
   console.log(`Express server running at http://localhost:${PORT}`);
 });
