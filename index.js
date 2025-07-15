@@ -38,8 +38,17 @@ app.post('/data', (req, res) => {
   res.json({ message: 'Data received!', yourData: req.body });
 });
 
+// 9. Example of sending JSON response
+app.get('/json', (req, res) => {
+  res.json({ framework: 'Express', type: 'Backend', success: true });
+});
 
-// 9. Start the server
+// 10. 404 handler (for routes not found)
+app.use((req, res) => {
+  res.status(404).send('Sorry, that route does not exist.');
+});
+
+// 11. Start the server
 app.listen(PORT, () => {
   console.log(`Express server running at http://localhost:${PORT}`);
 });
