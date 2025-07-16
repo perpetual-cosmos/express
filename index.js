@@ -58,3 +58,9 @@ app.listen(PORT, () => {
   console.log(`Express server running at http://localhost:${PORT}`);
 });
 
+// -------------------------------------
+// EXPLORE:
+// - Add your own routes!
+// - Try different HTTP methods (PUT, DELETE)
+// - Learn about middleware and error handling
+// - See the README for more ideas
