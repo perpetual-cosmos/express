@@ -1,3 +1,8 @@
+// EXPRESS LEARNING GUIDE FOR BEGINNERS
+// -------------------------------------
+// This file will help you learn the basics of Express step by step.
+// Read the comments and try changing the code to see what happens!
+
 // 1. Import the express module
 const express = require('express');
 
