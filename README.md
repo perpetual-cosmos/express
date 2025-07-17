@@ -48,3 +48,16 @@ This project is a hands-on, beginner-friendly introduction to [Express](https://
    - `GET http://localhost:3000/json` — See a JSON response
    - Try a route that doesn't exist to see the 404 handler
 
+## Code Walkthrough
+- **1. Import Express**: Brings the Express library into your project.
+- **2. Create App**: Sets up your Express application.
+- **3. Middleware**: Adds JSON parsing so you can handle POST data.
+- **4. Port**: Sets the port number for your server.
+- **5. Basic GET Route**: Responds to requests at the root URL.
+- **6. Route Parameters**: Handles dynamic URLs like `/hello/:name`.
+- **7. Query Strings**: Reads data from the URL, e.g., `/search?term=express`.
+- **8. POST Route**: Receives and responds with JSON data.
+- **9. JSON Response**: Shows how to send JSON from your server.
+- **10. 404 Handler**: Catches requests to unknown routes.
+- **11. Start Server**: Runs your app and listens for requests.
+
