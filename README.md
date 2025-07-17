@@ -26,3 +26,25 @@ This project is a hands-on, beginner-friendly introduction to [Express](https://
 ### Prerequisites
 - [Node.js](https://nodejs.org/) installed (version 12 or higher recommended)
 
+### Steps
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd express
+   ```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+3. **Start the server**
+   ```bash
+   node index.js
+   ```
+4. **Try the following in your browser or Postman:**
+   - `GET http://localhost:3000/` — Welcome message
+   - `GET http://localhost:3000/hello/YourName` — Personalized hello
+   - `GET http://localhost:3000/search?term=express` — Search with query string
+   - `POST http://localhost:3000/data` — Send JSON data (body: `{ "foo": "bar" }`)
+   - `GET http://localhost:3000/json` — See a JSON response
+   - Try a route that doesn't exist to see the 404 handler
+
