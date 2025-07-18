@@ -61,3 +61,17 @@ This project is a hands-on, beginner-friendly introduction to [Express](https://
 - **10. 404 Handler**: Catches requests to unknown routes.
 - **11. Start Server**: Runs your app and listens for requests.
 
+## Try It Yourself!
+- Add a new route (e.g., `/about`) that returns your own message.
+- Create a route that accepts two numbers as parameters and returns their sum.
+- Add a new POST route that saves data to a variable (in memory).
+- Try using other HTTP methods like PUT or DELETE.
+- Explore Express middleware (e.g., logging requests).
+
+## More Resources
+- [Express Documentation](https://expressjs.com/)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
+
+---
+
+**This project is for learning and experimentation. Have fun exploring Express!** 
